@@ -42,8 +42,8 @@ function botaoEncriptar() {
         document.querySelector(".secao__resultado").style['justify-content'] = "space-between";
         document.querySelector('.resultado__criptografia__texto').style.display = 'block';
         document.querySelector('.botao__encriptar').style.display = 'block';
-        botaoCopiar.classList.remove('desativado');
-        botaoCopiar.classList.add('ativo');
+
+        botaoCopiar.className = 'ativo'
         console.log(botaoCopiar);
     } else {
         document.getElementById("mensagem").style.display = "block";

@@ -283,10 +283,6 @@ main {
     color: var(--cor-texto);
 }
 
-#botao__copiar {
-        display: none;
-}
-
 .ativo {
     display: block;
 }
