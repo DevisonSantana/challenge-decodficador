@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__logo" src="./assets/Vector.png" alt="logotipo_alura">
+        <span class="cabecalho__logo__vertical__separador"></span>
+        <div class="cabecalho__logo_one"><img class="cabecalho__logo" src="./assets/LOGO_ONE.png" alt="logotipo_ONE">
+        </div>
+
+    </header>
+    <main>
+        <section class="secao__interacao">
+            <div>
+                <textarea id="inputText" class="caixa__usuario__texto" cols="50" rows="10"
+                    placeholder="Digite seu texto aqui"></textarea>
+            </div>
+            <div class="aviso">
+                <img class="aviso__imagem" src="./assets/Group.png" alt="exclamação indicando alerta">
+                <h6 class="aviso__texto">Apenas letras minúsculas e sem acento.</h6>
+            </div>
+
+            <div id="botoes">
+                <button class="botao__encriptar" onclick="botaoEncriptar()" disabled>Criptografar</button>
+                <button class="botao__desencriptar" onclick="botaoDesencriptar()" disabled>Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="secao__resultado">
+            <div class="resultado__criptografia">
+                <div>
+                    <textarea id="outputText" readonly></textarea>
+                </div>
+                <div class="resultado__aviso">
+                    <img class="resultado__criptografia__imagem" src="./assets/High quality products 1 1.png"
+                        alt="menina lupa">
+
+                    <div class="resultado__criptografia__texto">
+                        <h2 class="resultado__criptografia__titulo">Nenhuma mensagem encontrada</h2>
+                        <p class="resultado__criptografia__paragrafo">Digite um texto que você deseja criptografar ou
+                            descriptografar.</p>
+                    </div>
+                </div>
+            </div>
+            <button id="botao__copiar" class="desativado" onclick="copiarTexto()">Copiar Texto</button>
+            <div id="notification"></div>
+
+        </section>
+    </main>
+
+
+    <footer class="rodape">
+        <p>Desenvolvido por João Lucas (PsychoAng3l) Albuquerque.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
